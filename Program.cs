@@ -35,3 +35,16 @@ void PrintArray(string[] array)
     }
 }
 
+void PrintOurWork(string[] array)
+{
+    Console.WriteLine("Исходный массив: ");
+	PrintArray(array);
+	string[] shortArray = GetNewArray(array);
+	Console.WriteLine($"Новый массив (элементы состоящие из {maxsymbol} и менее символов):");
+	PrintArray(shortArray);
+	Console.WriteLine();
+}
+		
+PrintOurWork(arr1);
+PrintOurWork(arr2);
+PrintOurWork(arr3);
