@@ -22,3 +22,16 @@ string[] GetNewArray(string[] array)
     return result;
 }
 
+void PrintArray(string[] array)
+{
+    if(array.Length == 0)
+	{
+		Console.WriteLine("Подходящие элементы массива отсутствуют!");
+	}
+    else
+	{
+        Array.ForEach(array, (str) => Console.Write($"[{str}] "));
+        Console.WriteLine();
+    }
+}
+
